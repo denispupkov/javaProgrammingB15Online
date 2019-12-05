@@ -6,8 +6,9 @@ public class PalindromeTest {
 
         // level, kayak, elle, madam, aziza - palindrome words
 
-        String name = "kayak";
-
+        String nameWithSpace = "Nurses run";
+        String name="";
+        name=nameWithSpace.replaceFirst(" ", "");
         String reversedName = "";
         System.out.println("original name" + name);
 
