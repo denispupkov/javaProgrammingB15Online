@@ -13,7 +13,7 @@ public class FindDogInASentence {
             String current3chars = msg.substring(x, x + 3);
             //System.out.println(msg.substring(x,x+3));
 
-            if (current3chars.equals("Dog")) {
+            if (current3chars.equalsIgnoreCase("Dog")) {
                 System.out.println("BINGO!!! AT " + x);
             }
 
