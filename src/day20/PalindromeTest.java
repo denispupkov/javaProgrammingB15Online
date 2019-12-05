@@ -10,7 +10,7 @@ public class PalindromeTest {
         String name="";
         name=nameWithSpace.replaceFirst(" ", "");
         String reversedName = "";
-        System.out.println("original name" + name);
+        System.out.println("original name = " + name);
 
         for (int x = name.length() - 1; x >= 0; x--) {
 
@@ -18,7 +18,7 @@ public class PalindromeTest {
 
         }
 
-        System.out.println("reversedName = " + reversedName);
+        System.out.println("reversed Name = " + reversedName);
         // HOMEWORK MAKE IT CASE/SPACE INCENTIVES (about space between 2 words)
         if (name.equalsIgnoreCase(reversedName)) {
 
