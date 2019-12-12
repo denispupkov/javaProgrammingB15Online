@@ -23,23 +23,36 @@ public class HomeWork2 {
 
 
             System.out.print(eachFruit);
-            //System.out.print(", ");
+            System.out.print(", ");
 
-            //  for (int i = 0; i < groceryItems.length; i++) {
-            //      if (i % 2 != 0) {
-            //        oneItem = groceryItems[i];
-            //        System.out.println(oneItem);
+            for (int i = 0; i < groceryItems.length; i++) {
+                if (i % 2 != 0) {
+                    oneItem = groceryItems[i];
+                    System.out.println(oneItem);
                 }
 
             }
 
-    //for (int i = groceryItems.length - 1; i >= 0; i--) {
-    //   System.out.println(groceryItems[i]);
+            for (int i = groceryItems.length - 1; i >= 0; i--) {
+                System.out.println(groceryItems[i]);
+            }
+
+        }
+        for (int i = 0; i <groceryItems.length ; i++) {
+
+            if (groceryItems[i].equalsIgnoreCase("strawberry")) {
+
+                System.out.println("Index of Strawberry "+groceryItems[i].indexOf(i));
+            }
+
+        }
+
+
+
+
+
+    }
 }
-
-
-
-
 
 
 
