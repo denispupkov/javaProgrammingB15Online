@@ -1,22 +1,29 @@
 package day24;
 
+import java.util.Scanner;
+
 public class HomeWork {
-
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[] nums = {input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt(), input.nextInt()};
 
-    String[] bunchOfWords ={"Father","Mother","SisterSisterSister","Aunt","Siblings","GrandGrandGrandMother",
-            "GrandGrandFather"};
+        //TODO: write your code below
+        int count = 0;
 
-    String max="";
-        for (String count: bunchOfWords) {
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 7; j++) {
 
-            if (count.length()>max.length()) {
-                max=count;
+                if (nums[i] == nums[j]) {
+                    count++;
+                }
+
             }
-
         }
-        System.out.println("Longest word is "+max);
-
 
     }
+
 }
+
+
+
+
