@@ -2,40 +2,30 @@ package day31;
 
 import java.util.Scanner;
 
-class Main {
+class Repl139 {
 
 
     public static void main(String[] args) {
         Scanner inp = new Scanner(System.in);
-        int size = inp.nextInt();
-        int[] arr = new int[size];
-        for (int i = 0; i <= size - 1; i++) {
-
-            arr[i] = inp.nextInt();
-        }
-
-        plus_minus(arr);
-
-
+        String s = inp.next();
+        person(s);
     }
 
-    public static int plus_minus(int[] arr) {
-        int pos = 0;
-        int neg = 0;
-        int zero = 0;
+    public static void person(String info) {
+        int cnt = 0;
+        for (int i = 0; i < info.length(); i++) {
 
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] > 0) {
-                pos++;
-            } else if (arr[i] < 0) {
-                neg++;
-            } else {
-                zero++;
+            if (info.substring(0, info.length() - 1).equals(",")) {
+                cnt++;
             }
         }
 
-        return pos;
+        String[] result = new String[cnt];
+        //your code here
+        result = info.split(",");
 
-    }
+        System.out.println("person name: " + result[0] + " last name: " + result[1] + "age: " + result[2]);
+
+    }//end person
+
 }
