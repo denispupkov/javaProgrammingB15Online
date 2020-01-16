@@ -6,18 +6,23 @@ public class FindingUniqueUsingArrayList {
 
     public static void main(String[] args) {
 
-        int[] nums = {11,33,44,11,33,44,22,22,55,44,33};
+        int[] nums = {11, 33, 44, 11, 33, 44, 22, 22, 55, 44, 33};
 
-        ArrayList<Integer> uniqueList = new ArrayList<>();
+        ArrayList<Integer> uniqueLst = new ArrayList<>();
 
-        //add items to uniqueList if it doe not already contains that item
+        // I want to add items to uniqueLst if it does not already contains that item
 
-        for (int each:nums) {
-        uniqueList.add(each);
-            System.out.println("each = " + each);
+        for (int each : nums) {
 
+            //System.out.println("each = " + each);
+            if (!uniqueLst.contains(each)) {
+                uniqueLst.add(each);
+            }
         }
-        System.out.println("uniqueList = " + uniqueList);
+
+        System.out.println("uniqueLst = " + uniqueLst);
+
+
     }
 
 }

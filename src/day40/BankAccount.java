@@ -5,7 +5,7 @@ public class BankAccount {
     String accountType;
     String accountHolder;
     long accauntNumber;
-    double balance;
+    public double balance;
 
     //setAllTheValue
     public void setAllTheValue(String newAccountType, String newAccountHolder, long newAccountNumber, double newBalance) {
