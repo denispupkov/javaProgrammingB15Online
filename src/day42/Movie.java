@@ -30,6 +30,18 @@ public class Movie {
         return type;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public String toString() {
         return "Movie{" +
                 "name='" + name + '\'' +
