@@ -29,15 +29,24 @@ this.schoolName=schoolName;
 this.AllStudentsList=allStudentsList;
 }
 public void AddNewStudent (Student student) {
+
     this.AllStudentsList.add(student);
 }
+
 public void AddNewStudent(Student[] students) {
+
     this.AllStudentsList.addAll(Arrays.asList(students));
 }
-public void AddNewStudent(List<Student> listOfStudents) {
+
+    public void AddNewStudent(List<Student> listOfStudents) {
 
     this.AllStudentsList.addAll(listOfStudents);
 }
+
+    public String toString() {
+        return "" + AllStudentsList;
+    }
+
 }
 
 
@@ -69,9 +78,12 @@ public class AssociationExample {
 
 
         System.out.println(cybertek.AllStudentsList);
-        System.out.println(cybertek.schoolName);
+        //System.out.println(cybertek.schoolName);
 
+        for (Student eachStudent : cybertek.AllStudentsList) {
 
+            System.out.println(eachStudent);
+        }
 
     }
 
